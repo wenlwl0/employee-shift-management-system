@@ -1,12 +1,12 @@
 # Employee Shift Scheduling System
 
-A desktop-based **employee shift scheduling application** built with **C# and Windows Forms**. The application allows managers to assign and manage employee shifts while enforcing scheduling rules, viewing schedules, tracking attendance, and calculating weekly wages.
+A desktop-based **employee shift scheduling application** built with **C# and Windows Forms**. This application allows managers to assign and manage employee shifts while enforcing scheduling rules, viewing schedules, tracking attendance, and calculating weekly wages.
 
 ## Overview
 
 Managing employee schedules manually can lead to double bookings, understaffed shifts, and uneven workloads. This application provides a simple interface for creating and managing employee schedules while automatically checking predefined scheduling constraints.
 
-The system maintains employee and shift data in memory and provides separate interfaces for **shift management** and **attendance tracking**.
+This system maintains employee and shift data in memory and provides separate interfaces for **shift management** and **attendance tracking**.
 
 ## Features
 
@@ -24,7 +24,7 @@ The system maintains employee and shift data in memory and provides separate int
 
 ### Scheduling Rules
 
-The application enforces several business rules when assigning shifts:
+This application enforces several business rules when assigning shifts:
 
 * An employee cannot be assigned to the same shift more than once.
 * A maximum of **3 employees** can work the same shift.
@@ -35,7 +35,7 @@ These rules are validated before a shift is added to the schedule.
 
 ### Attendance Tracking
 
-The application includes a separate attendance view that receives the current employee and shift data and displays:
+This application includes a separate attendance view that receives the current employee and shift data and displays:
 
 * Employee name
 * Shift date
@@ -45,7 +45,7 @@ Attendance data is sorted by shift date for easier review.
 
 ### Wage Calculation
 
-The system calculates weekly wages based on the number of shifts worked.
+This system calculates weekly wages based on the number of shifts worked.
 
 ```text
 Weekly Wage = Number of Shifts × Wage Per Shift
@@ -55,7 +55,7 @@ The current configuration uses **£50 per shift**.
 
 ## Shift Types
 
-The application currently supports five three-hour shift periods:
+This application currently supports five three-hour shift periods:
 
 | Shift        | Time               |
 | ------------ | ------------------ |
@@ -104,7 +104,7 @@ Contains the core scheduling functionality, including:
 * Wage calculation
 * Attendance navigation
 
-The application represents employees and shifts using C# classes and stores them in `List<T>` collections.
+This application represents employees and shifts using C# classes and stores them in `List<T>` collections.
 
 ### `AttendanceForm.cs`
 
@@ -112,7 +112,7 @@ Provides a separate view of scheduled shifts for attendance management. Employee
 
 ## Data Model
 
-The application uses two primary objects:
+This application uses 2 primary objects:
 
 ### Employee
 
@@ -135,16 +135,6 @@ Shift
 ```
 
 Employees and shifts are connected through `EmployeeID`.
-
-## Technologies
-
-* **C#**
-* **.NET / Windows Forms**
-* **LINQ**
-* **DataTable / DataView**
-* **Object-Oriented Programming**
-* **Event-Driven Programming**
-* **Visual Studio**
 
 ## C# Concepts Demonstrated
 
